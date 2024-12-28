@@ -67,3 +67,27 @@ Step 5 : Cache and Database Consistency
 Reads are usually served from the cache, reducing database load.
 Temporary inconsistency may occur between cache and database, as database writes lag behind.
 ```
+
+## Read-through Project
+
+```
+Step 1 : Client Requests Data
+The client makes a request to the system for a specific piece of data.
+
+Step 2 : Cache Check
+The system first checks if the data is present in the cache.
+Cache Hit: If the data is found in the cache, it is returned to the client.
+Cache Miss: If the data is not found in the cache, the cache automatically fetches it from the database.
+
+Step 3 : Load Data from Database (if Cache Miss)
+If the data is not in the cache, the system queries the database to fetch the missing data.
+
+Step 4 : Cache the Data
+After retrieving the data from the database, the system stores it in the cache for subsequent requests.
+
+Step 5 : Return Data to Client
+Finally, the requested data is returned to the client, either from the cache (on a cache hit) or after being fetched from the database and cached (on a cache miss).
+
+Step 6 : Future Requests
+For any future requests for the same data, the cache will serve the data directly until it expires or is evicted, reducing the need for frequent database calls.
+```
