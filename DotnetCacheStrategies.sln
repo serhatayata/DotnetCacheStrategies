@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCacheStrategies.CacheAside", "DotnetCacheStrategies.CacheAside\DotnetCacheStrategies.CacheAside.csproj", "{BA913E42-DC55-4FE9-A958-B972E97A7D18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCacheStrategies.WriteThrough", "DotnetCacheStrategies.WriteThrough\DotnetCacheStrategies.WriteThrough.csproj", "{660FED78-3503-4A27-818F-12C2F1DC1EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA913E42-DC55-4FE9-A958-B972E97A7D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA913E42-DC55-4FE9-A958-B972E97A7D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA913E42-DC55-4FE9-A958-B972E97A7D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660FED78-3503-4A27-818F-12C2F1DC1EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660FED78-3503-4A27-818F-12C2F1DC1EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660FED78-3503-4A27-818F-12C2F1DC1EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660FED78-3503-4A27-818F-12C2F1DC1EF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

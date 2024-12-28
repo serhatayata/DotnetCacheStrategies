@@ -1,0 +1,6 @@
+@DotnetCacheStrategies.WriteThrough_HostAddress = http://localhost:5103
+
+GET {{DotnetCacheStrategies.WriteThrough_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
