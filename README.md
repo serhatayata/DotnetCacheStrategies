@@ -44,3 +44,26 @@ If the data is not in the cache, it is retrieved from the database, then stored 
 The new data is then written to both the cache and database.
 ```
 
+## Write-behind Project
+
+```
+Step 1 : Client Writes Data to Cache
+The client sends a write request.
+The cache is updated immediately with the new data, and the client receives a fast acknowledgment.
+
+Step 2 : Queue the Write Operation
+Instead of writing directly to the database, the cache adds the write operation to a queue.
+This queue temporarily holds pending writes for asynchronous processing.
+
+Step 3 : Asynchronous Write to Database
+A background worker processes the queue, writing the data to the database after a delay or in batches.
+Writes are performed periodically to reduce database load.
+
+Step 4 : Acknowledgment After Database Write
+Once the data is successfully written to the database, the operation is removed from the queue.
+If the database write fails, the write remains in the queue for retrying.
+
+Step 5 : Cache and Database Consistency
+Reads are usually served from the cache, reducing database load.
+Temporary inconsistency may occur between cache and database, as database writes lag behind.
+```
