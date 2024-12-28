@@ -29,4 +29,18 @@ Repository Pattern and Dependency Injection Pattern are used in the project.
 
 ## Write-through Project
 
+This strategy ensures immediate consistency between the cache and the database because both are updated during every write operation.
+
+```
+Step 1 : Cache Request (Read/Write):
+Read Request: The application checks the cache first for the required data.
+Write Request: The application writes data to the cache (temporary storage) and immediately writes the same data to the database (persistent storage).
+
+Step 2 : Write Hit (Data in Cache):
+If the data is already in the cache, the cache is updated, and the same data is immediately written to the database to keep both consistent.
+
+Step 3 : Write Miss (Data NOT in Cache):
+If the data is not in the cache, it is retrieved from the database, then stored in the cache for future reads.
+The new data is then written to both the cache and database.
+```
 
