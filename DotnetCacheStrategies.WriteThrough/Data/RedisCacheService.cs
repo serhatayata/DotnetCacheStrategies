@@ -9,7 +9,8 @@ public class RedisCacheService : ICache
 {
     private readonly IConnectionMultiplexer _redisCache;
 
-    public RedisCacheService(IConnectionMultiplexer redisCache)
+    public RedisCacheService(
+    IConnectionMultiplexer redisCache)
     {
         _redisCache = redisCache;
     }
