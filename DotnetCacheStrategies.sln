@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCacheStrategies.Write
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCacheStrategies.WriteBehind", "DotnetCacheStrategies.WriteBehind\DotnetCacheStrategies.WriteBehind.csproj", "{25B69DAC-B16F-4929-8E17-314AF6F0ABCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCacheStrategies.ReadThrough", "DotnetCacheStrategies.ReadThrough\DotnetCacheStrategies.ReadThrough.csproj", "{E62196C7-2804-4A3E-B899-0E79B0C8A39A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{25B69DAC-B16F-4929-8E17-314AF6F0ABCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B69DAC-B16F-4929-8E17-314AF6F0ABCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B69DAC-B16F-4929-8E17-314AF6F0ABCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62196C7-2804-4A3E-B899-0E79B0C8A39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62196C7-2804-4A3E-B899-0E79B0C8A39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62196C7-2804-4A3E-B899-0E79B0C8A39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62196C7-2804-4A3E-B899-0E79B0C8A39A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

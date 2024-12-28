@@ -1,0 +1,6 @@
+@DotnetCacheStrategies.ReadThrough_HostAddress = http://localhost:5067
+
+GET {{DotnetCacheStrategies.ReadThrough_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
